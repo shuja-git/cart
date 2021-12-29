@@ -5,7 +5,7 @@
 //------------------------------
 //variable
 env.COMPONENT = "cart"
-env.BUILD_LABEL = "WOKSTATION"
+env.BUILD_LABEL = "WORKSTATION"
 
 //Library groovy file
 nodejs()
