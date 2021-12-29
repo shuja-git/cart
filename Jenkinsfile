@@ -1,5 +1,5 @@
 pipeline {
-    agent { lable 'WORKSTATION' }
+    agent { label 'WORKSTATION' }
 
     triggers { pollSCM('*/2 * * * *') }
 
