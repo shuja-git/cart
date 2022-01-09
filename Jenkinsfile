@@ -1,7 +1,7 @@
 @Library('roboshop') _
 
-nodejs.info 'Starting'
-nodejs.warning 'Nothing to do!'
+
+// nodejs.warning 'Nothing to do!'
 
 
 pipeline {
@@ -12,7 +12,10 @@ triggers {
 stages {
     stage('compile the code') {
         steps{
-            sh 'echo compile the code'
+            script{
+            nodejs.info 'compile the code'
+            }
+
         }
     }
     stage('Check Code quality') {
