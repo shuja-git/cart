@@ -1,7 +1,10 @@
 @Library('roboshop') _
 
+//variable
+env.COMPONENT = 'cart'
+
 
 // nodejs.warning 'Nothing to do!'
 
-// it will call the nodejs.groovy file
+// Library groovy file
 nodejs()
