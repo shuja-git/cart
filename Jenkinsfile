@@ -3,6 +3,7 @@
 //variable
 env.COMPONENT = 'cart'
 
+env.BUILD_LABEL = 'WORKSTATION'
 
 // nodejs.warning 'Nothing to do!'
 
