@@ -1,4 +1,5 @@
-@Library('roboshop')
+@Library('roboshop') _
+
 pipeline {
 agent any
 triggers {
