@@ -1,11 +1,44 @@
-@Library('roboshop') _
+// @Library('roboshop') _
+//
+// //variable
+// env.COMPONENT = 'cart'
+//
+// env.BUILD_LABEL = 'WORKSTATION'
+//
+// // nodejs.warning 'Nothing to do!'
+//
+// // Library groovy file
+// nodejs()
+// ----------------------------------------
 
-//variable
-env.COMPONENT = 'cart'
+pipeline{
+agent { label 'WORKSTATION' }
 
-env.BUILD_LABEL = 'WORKSTATION'
+triggers {  pollSCM('*/2 * * * *') }
 
-// nodejs.warning 'Nothing to do!'
+stages {
 
-// Library groovy file
-nodejs()
+stage('Compile Code'){
+steps{
+ sh 'echo Compile the code'
+}
+}
+
+stage('Code Chek'){
+steps{
+ sh 'echo Code check'
+}
+}
+
+stage('Test Cases'){
+steps{
+ sh 'echo Test case'
+}
+}
+
+
+}
+}
+
+
+
