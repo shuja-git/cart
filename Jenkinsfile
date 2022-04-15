@@ -10,11 +10,11 @@
 // // Library groovy file
 // nodejs()
 // ----------------------------------------
-@Library('roboshop') _
+// @Library('roboshop') _
 pipeline{
 agent { label 'WORKSTATION' }
 
-triggers {  pollSCM('*/2 * * * *') }
+// triggers {  pollSCM('*/2 * * * *') }
 
 stages {
 
