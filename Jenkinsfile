@@ -10,7 +10,7 @@
 // // Library groovy file
 // nodejs()
 // ----------------------------------------
-// @Library('roboshop') _
+@Library('roboshop') _
 pipeline{
 agent { label 'WORKSTATION' }
 
