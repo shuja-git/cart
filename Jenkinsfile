@@ -15,6 +15,10 @@
 // nodejs.info 'Starting'
 // nodejs.warning 'Nothing to do!'
 
+//variable declare
+env.COMPONENT = "cart"
+
+// Library Groovy file
 nodejs()
 
 
