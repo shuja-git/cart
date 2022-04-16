@@ -12,37 +12,10 @@
 // ----------------------------------------
 @Library('roboshop') _
 
-nodejs.info 'Starting'
-nodejs.warning 'Nothing to do!'
+// nodejs.info 'Starting'
+// nodejs.warning 'Nothing to do!'
 
-pipeline{
-agent { label 'WORKSTATION' }
-
-// triggers {  pollSCM('*/2 * * * *') }
-
-stages {
-
-stage('Compile Code'){
-steps{
- sh 'echo Compile the code'
-}
-}
-
-stage('Code Chek'){
-steps{
- sh 'echo Code check'
-}
-}
-
-stage('Test Cases'){
-steps{
- sh 'echo Test case'
-}
-}
-
-
-}
-}
+nodejs()
 
 
 
